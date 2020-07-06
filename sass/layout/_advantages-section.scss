@@ -19,19 +19,25 @@
 
     letter-spacing: 0.03em;
   }
-  & .list {
-    display: flex;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  @media screen and (min-width: 480px) {
+    .advantages p {
+      margin-bottom: 30px;
+    }
   }
-}
-.advantages-element {
-  width: calc((100% - 30 * 3) / 4);
+  //   & .list {
+  //     display: flex;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  //     margin-top: 0;
+  //     margin-bottom: 0;
+  //   }
+  // }
+  // .advantages-element {
+  //   width: calc((100% - 30 * 3) / 4);
+
+  //   &:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
 }
 .icon-adv-details::before {
   display: block;

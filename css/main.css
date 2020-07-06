@@ -376,15 +376,46 @@ textarea {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 header {
@@ -565,18 +596,10 @@ header__element {
   letter-spacing: 0.03em;
 }
 
-.advantages .list {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.advantages-element {
-  width: calc((100% - 30 * 3) / 4);
-}
-
-.advantages-element:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .advantages .advantages p {
+    margin-bottom: 30px;
+  }
 }
 
 .icon-adv-details::before {
@@ -621,6 +644,12 @@ header__element {
   background-position: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
 .what-we-do .title {
@@ -671,9 +700,11 @@ header__element {
   letter-spacing: 0.03em;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-role {
@@ -683,14 +714,15 @@ header__element {
 }
 
 .team-element {
-  width: calc((100% - 30px * 3) / 4);
   background-color: #ffffff;
   box-shadow: 0px 2px 1px 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-element:not(:nth-child(4n)) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .team-element {
+    width: 100%;
+  }
 }
 
 .client-list {
